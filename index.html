@@ -84,10 +84,6 @@
     />
 </svg>
 
-<audio id="audio-blob-blob" src="./sounds/bluub.m4a">
-    Your browser does not support the <code>audio</code> element.
-</audio>
-
 
 <svg id="blob" class="svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -141,22 +137,22 @@
 
     blobBlob.addEventListener(('mouseover'), () => {
         setTimeout(() => {
-            const soundBlobBlob = document.getElementById("audio-blob-blob");
-            soundBlobBlob.play();
+            const audio = new Audio("./sounds/blaab.m4a");
+            audio.play();
         }, 400)
     })
 
     blob.addEventListener(('mouseover'), () => {
         setTimeout(() => {
-            const soundBlob = document.getElementById("audio-blob");
-            soundBlob.play();
+            const audio = new Audio("./sounds/bloob.m4a");
+            audio.play();
         }, 400)
     })
 
     blub.addEventListener(('mouseover'), () => {
         setTimeout(() => {
-            const soundBlub = document.getElementById("audio-blub");
-            soundBlub.play();
+            const audio = new Audio("./sounds/allyblob.m4a");
+            audio.play();
         }, 400)
 
     })
