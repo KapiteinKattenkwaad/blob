@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Stoutens Blob</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            background-image: radial-gradient(circle at 29% 55%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 4%, transparent 4%, transparent 44%, transparent 44%, transparent 100%), radial-gradient(circle at 85% 89%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 52%, transparent 52%, transparent 100%), radial-gradient(circle at 6% 90%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 53%, transparent 53%, transparent 64%, transparent 64%, transparent 100%), radial-gradient(circle at 35% 75%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 6%, transparent 6%, transparent 98%, transparent 98%, transparent 100%), radial-gradient(circle at 56% 75%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 16%, transparent 16%, transparent 23%, transparent 23%, transparent 100%), radial-gradient(circle at 42% 0%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 3%, transparent 3%, transparent 26%, transparent 26%, transparent 100%), radial-gradient(circle at 29% 28%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 75%, transparent 75%, transparent 100%), radial-gradient(circle at 77% 21%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 35%, transparent 35%, transparent 55%, transparent 55%, transparent 100%), radial-gradient(circle at 65% 91%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 46%, transparent 46%, transparent 76%, transparent 76%, transparent 100%), linear-gradient(45deg, rgb(83, 91, 235), rgb(76, 11, 174));
+        }
+
+        .svg path {
+            transition: all 1s ease;
+        }
+
+        .svg path {
+            animation: blobbing 2s ease-in-out infinite;
+        }
+
+        .svg:hover path {
+            d: path('M56,-17C64.5,7.8,57.5,38.7,35.9,55.9C14.4,73.1,-21.9,76.5,-42.5,61C-63.1,45.4,-68.1,10.8,-58.4,-15.6C-48.7,-42.1,-24.4,-60.5,-0.3,-60.4C23.8,-60.3,47.6,-41.7,56,-17Z')
+        }
+
+        .svg path {
+            d: path(
+                    "M60.8,-19.6C68.2,2.8,56,31.6,35.4,46C14.7,60.4,-14.5,60.3,-34.2,46.2C-53.8,32.1,-63.9,4,-56.6,-18.3C-49.4,-40.6,-24.7,-57.2,1,-57.6C26.8,-57.9,53.5,-42,60.8,-19.6Z"
+            );
+        }
+
+        .svg-blub path {
+            d: path('M53,-18.4C61.9,9.9,57.3,41.3,37.8,56.6C18.2,72,-16.5,71.2,-39.5,54.5C-62.5,37.8,-73.8,5.1,-65.2,-22.8C-56.7,-50.7,-28.3,-73.8,-3.1,-72.8C22.1,-71.8,44.2,-46.7,53,-18.4Z')
+        }
+
+        .svg-blob-blob path {
+            d: path('M70.6,-25.9C78.5,1.4,63,33.3,38.6,50.4C14.2,67.5,-19,69.7,-36.3,55.8C-53.6,41.8,-55,11.8,-46.3,-16.7C-37.6,-45.1,-18.8,-71.9,6.3,-73.9C31.3,-76,62.7,-53.3,70.6,-25.9Z')
+        }
+
+
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>
+    Sound on please
+</h1>
+
+<h3>
+    For when you miss ons
+</h3>
+
+<h4>
+    Klik on de blob
+</h4>
+
+<svg id="blob-blob" class="svg svg-blob-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath id="circleView">
+            <path fill="#FF0066" transform="translate(100 100)"/>
+        </clipPath>
+    </defs>
+    <image
+            width="200"
+            height="200"
+            xlink:href="./img/romax.jpeg"
+            clip-path="url(#circleView)"
+    />
+</svg>
+
+<audio id="audio-blob-blob" src="./sounds/bluub.m4a">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+
+
+<svg id="blob" class="svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath id="blobView">
+            <path fill="#FF0066" transform="translate(100 100)"/>
+        </clipPath>
+    </defs>
+    <image
+            width="200"
+            height="200"
+            xlink:href="./img/fambo.jpeg"
+            clip-path="url(#blobView)"
+    />
+</svg>
+
+
+<audio id="audio-blob" src="./sounds/bloob.m4a">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+
+
+<svg id="blub" class="svg svg-blub" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath id="blubView">
+            <path fill="#FF0066" transform="translate(100 100)"/>
+        </clipPath>
+    </defs>
+    <image
+            width="200"
+            height="200"
+            xlink:href="./img/almax.jpeg"
+            clip-path="url(#blubView)"
+    />
+</svg>
+
+
+<audio id="audio-blub" src="./sounds/allyblob.m4a">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+
+<p>
+    Greetings from Straya
+</p>
+
+</body>
+
+<script>
+    const blobBlob = document.getElementById('blob-blob')
+    const blob = document.getElementById('blob')
+    const blub = document.getElementById('blub')
+
+    blobBlob.addEventListener(('mouseover'), () => {
+        setTimeout(() => {
+            const soundBlobBlob = document.getElementById("audio-blob-blob");
+            soundBlobBlob.play();
+        }, 400)
+    })
+
+    blob.addEventListener(('mouseover'), () => {
+        setTimeout(() => {
+            const soundBlob = document.getElementById("audio-blob");
+            soundBlob.play();
+        }, 400)
+    })
+
+    blub.addEventListener(('mouseover'), () => {
+        setTimeout(() => {
+            const soundBlub = document.getElementById("audio-blub");
+            soundBlub.play();
+        }, 400)
+
+    })
+</script>
+</html>
